@@ -1,41 +1,8 @@
 import React, { Component } from 'react';
+import TOC from './components/TOC';
+import Content from './components/Content';
+import Subject from './components/Subject';
 import './App.css';
-
-class Subject extends Component {
-  render() {
-    return (
-      <header>
-        <h1>{this.props.title}</h1>
-        {this.props.sub}
-      </header>
-    );
-  }
-}
-
-class TOC extends Component {
-  render() {
-    return (
-      <nav>
-        <ol>
-          <li><a href="/read/1">html</a></li>
-          <li><a href="/read/2">css</a></li>
-          <li><a href="/read/3">js</a></li>
-        </ol>
-      </nav>
-    );
-  }
-}
-
-class Content extends Component {
-  render() {
-    return (
-      <article>
-        <h2>{this.props.title}</h2>
-        {this.props.desc}
-      </article>
-    );
-  }
-}
 
 class App extends Component {
   render() {

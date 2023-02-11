@@ -9,17 +9,23 @@ function Header() {
   );
 }
 
+function Nav() {
+  return (
+    <nav>
+      <ul>
+        <li><a href="/read/1">html</a></li>
+        <li><a href="/read/2">css</a></li>
+        <li><a href="/read/3">js</a></li>
+      </ul>
+    </nav>
+  );
+}
+
 function App() {
   return (
     <div>
       <Header></Header>
-      <nav>
-        <ol>
-          <li><a href="/read/1">html</a></li>
-          <li><a href="/read/2">css</a></li>
-          <li><a href="/read/3">js</a></li>
-        </ol>
-      </nav>
+      <Nav></Nav>
       <article>
         <h2>welcome</h2>
         Hello, WEB

@@ -1,12 +1,18 @@
 import React from 'react';
 import './App.css';
 
+function Header() {
+  return (
+    <header>
+      <h1><a href="/">React</a></h1>
+    </header>
+  );
+}
+
 function App() {
   return (
     <div>
-      <header>
-        <h1><a href="/">React</a></h1>
-      </header>
+      <Header></Header>
       <nav>
         <ol>
           <li><a href="/read/1">html</a></li>

@@ -21,15 +21,21 @@ function Nav() {
   );
 }
 
+function Article() {
+  return (
+    <article>
+        <h2>welcome</h2>
+          Hello, WEB
+    </article>
+  );
+}
+
 function App() {
   return (
     <div>
       <Header></Header>
       <Nav></Nav>
-      <article>
-        <h2>welcome</h2>
-        Hello, WEB
-      </article>
+      <Article></Article>
     </div>
   );
 }
